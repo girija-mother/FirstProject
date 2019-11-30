@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>closure</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	function addNumers(firstNumber,secoundNumber){
+		var returnValue="Results is:";
+		function add(){
+			return returnValue+(firstNumber+secoundNumber);
+
+		}
+		return add();
+	}
+	var result=addNumers(10,20);
+	document.write(result);
+</script>
+</html>

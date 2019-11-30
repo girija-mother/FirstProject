@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objectinstance</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var obj={};
+	var output=""+typeof obj;
+	console.log(output);
+
+	//Adding properties to objects
+	var employee={};
+	employee.name="vinay";
+	employee.designation="TeamLead";
+	console.log(employee);
+	var empName=employee.name;
+	output="EmpName:"+empName;
+	console.log(output);
+
+
+
+	var employee1={
+		name:"jhon",
+		age:40,
+		designation:"manager",
+		50:"something"
+	};
+	console.log(employee1);
+	console.log(employee1.name);
+
+
+
+     output=employee1["name"];
+
+     console.log(output);
+
+
+     var emp={
+     	name:"abc",
+     	age:40
+     };
+     var myName="age";
+     output=emp[myName];
+     console.log(output);
+var student={
+	name:"vinay",
+	age:25,
+	group:"Bsc",
+	address:{
+		city:"Hyderabad",
+		state:"Telangana",
+		country:"India"
+	}
+};
+output=student.address.city;
+console.log(output);
+
+student.address.street="ammerpet";
+output=student.address.street;
+console.log(output);
+var student1={
+	name:'abc',
+	age:25
+};
+var student2={
+	name:'abc',
+	age:25
+};
+student2=student1;
+if(student1===student2){
+	output="Both are Equal";
+	console.log(output);
+}
+else{
+	output="Both are Not Equal";
+	console.log(output);
+}
+
+
+
+</script>
+</html>
